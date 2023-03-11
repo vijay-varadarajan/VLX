@@ -1,0 +1,6 @@
+home (default)
+create account
+login
+products 
+buy
+sell
