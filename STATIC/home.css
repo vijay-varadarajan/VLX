@@ -224,7 +224,7 @@ form {
 }
 .heading{
 	width: fit-content;
-	padding-top: 240px;
+	padding-top: 200px;
 	padding-left: 110px;
 	font-size: 60px;
 	font-family: 'Roboto', sans-serif;
@@ -234,7 +234,7 @@ form {
 .subheading{
 	width: fit-content;
 	padding-left: 110px;
-	font-size: 90px;
+	font-size: 95px;
 	font-family: 'Montserrat', sans-serif;
 	color: aliceblue;
 }
@@ -294,7 +294,7 @@ form {
 	margin-right: 20vw;
 }
 .line{
-	border-bottom: 2px solid lightgray;
+	border-bottom: 2px solid rgb(147, 147, 147);
 	margin-left: 15vw;
 	margin-right: 15vw;
 }
