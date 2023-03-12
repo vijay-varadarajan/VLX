@@ -2,7 +2,7 @@ body{
 	background-color: #ffffff;
 	
 }
-/* Hide the scrollbar */
+/*--- Hide the scrollbar ---*/
 ::-webkit-scrollbar {
     display: none;
 }
