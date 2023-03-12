@@ -12,19 +12,15 @@ from helpers import apology, login_required
 
 app = Flask(__name__)
 
-
-# Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-# Configure session to use filesystem (instead of signed cookies)
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-# Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///VLX.db")
 
-
+#CACHE NONSENSE-----------------------------------
 @app.after_request
 def after_request(response):
     """Ensure responses aren't cached"""
@@ -55,7 +51,7 @@ def login():
             return apology("must provide password", 400)
         
         rows = db.execute(
-            "SELECT * FROM users WHERE Username = ?", request.form.get("username")
+            "SELECT * FROM Users WHERE Username = ?", request.form.get("username")
         )
 
         # Ensure username exists and password is correct
@@ -87,16 +83,13 @@ def register():
         elif not request.form.get("password"):
             return apology("must provide password", 400)
 
-        elif request.form.get("confirm_password") != request.form.get("password"):
-            return apology("passwords don't match", 400)
-
         username = request.form.get("username")
         hashed_password = generate_password_hash(request.form.get("password"))
         email = request.form.get("email")
 
         try:
             registrant = db.execute(
-                "INSERT INTO users (Username, Password, Email) VALUES (?, ?)",
+                "INSERT INTO Users (Username, Password, Email) VALUES (?, ?, ?)",
                 username, hashed_password, email
             )
             
