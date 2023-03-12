@@ -14,7 +14,7 @@ body
     
 }
 .ani-back{
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4),rgba(255, 255, 255,0)), url(../STATIC/MEDIA/login_pic.jpg);
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4),rgba(255, 255, 255,0)), url(../static/MEDIA/login_pic.jpg);
     background-position: center;
     background-size: cover;
     height: 98vh;

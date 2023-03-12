@@ -170,7 +170,7 @@ form {
 
 .intro{
 	margin-top: 20px;
-	background-image: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(../STATIC/MEDIA/1584528545phpdljDz1.jpeg);
+	background-image: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.4)), url(../static/MEDIA/1584528545phpdljDz1.jpeg);
 	background-position: center;
 	background-size: cover;
 	width: 100%;
