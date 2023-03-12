@@ -190,11 +190,38 @@ button[type="submit"] {
 button[type="submit"]:hover {
 	color: #ffffff;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transform: translateY(-2px);
 }
 button[type="submit"]:active {
-	color: #4e4e4e;   
+	color: #4e4e4e;
+    transform: translateY(0px);   
 }
 h1{
     font-size: 20px;
     margin-top: 19px;
+}
+.home-area{
+    margin-top: 110px;
+    margin-left: 20px;
+    
+}
+.home-button{
+    border: none;
+}
+.home_text{
+    font-size: large;
+    font-weight: 600;
+    margin-left: 7px;
+    
+}
+.material-symbols-sharp{
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #000;
+}.transition:hover{
+    transform: translateX(-4px);
+}
+.transition:active{
+    transform: translateX(0px);
 }

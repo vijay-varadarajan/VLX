@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,400,0,-25" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -13,23 +14,31 @@
 <body>
 	<div class="navigation_panel">
 		<div class="navi">
-			<div class="leftheader">
+				<div class="logo">
+					<img src="../STATIC/MEDIA/VLX-block.png">
+
+				</div>
+				
 				<div class="search">
 					<form>
 						<input type="text" placeholder="Type what you want to buy...">
-						<button type="submit">Search</button>
+						<button type="submit"><span class="material-symbols-sharp">
+							search
+							</span></button>
 							
 					</form>
 				</div>
-			</div>	
-			<div class="rightheader">
+				
+		
 				<div class="acc">	
-					<a class="login" href="../templates/Log-in.html">Login</a>
-					<a class="register" href="../templates/Register.html">Register</a>
-					<a class="sell" href="#">SELL</a>
+					<a class="login" href="../templates/login.html">Login</a>
+					<a class="register" href="../templates/register.html">Register</a>
+					<a class="sell" href="#"><span class="material-symbols-sharp">
+						add
+						</span>SELL</a>
 					
 				</div>
-			</div>
+		
 		</div>
 	</div>
 	<div class="intro">
@@ -38,7 +47,9 @@
 			<div class="subheading">VLX</div>
 		</div>
 		<div class="right">
-			<button class ="products" >VIEW ALL PRODUCTS --></button>
+			<button class ="products" >VIEW ALL PRODUCTS <span class="material-symbols-sharp">
+				arrow_forward
+				</span></button>
 		</div>
 	</div>
 	<div class="des_page">
